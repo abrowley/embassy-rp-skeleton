@@ -1,11 +1,12 @@
 <!-- Title -->
 <p align="center">
   <img width=15% src="https://www.svgrepo.com/show/68860/microchip.svg">
-  <h1 align="center">Embassy RP Skeleton</h1>
+  <h1 align="center">{{project-name}}</h1>
 </p>
 
-The **Embassy RP Skeleton** repository is a project template intended as a starting point for developing your own
-firmware for the [`rp2040`][1] based on the [`embassy`][2] asynchronous embedded development framework for [Rust][3].
+The {{project-name}} project is firmware for the [`rp2040`][1] based on the [`embassy`][2] asynchronous embedded development framework for [Rust][3].
+
+It is based on the **Embassy RP Skeleton** repository [Rust][3].
 
 It includes all of the [`knurling-rs`][4] tooling ([`defmt`][5], [`defmt-rtt`][5], [`panic-probe`][5], [`flip-link`][6],
 [`probe-run`][7]) to enhance the embedded development process.
@@ -109,26 +110,6 @@ Pico A VSYS -> Pico B VSYS
 For more information on connecting the two Raspberry Pi Picos, the wiring loom between them and its connections, see
 the section _Appendix A > Wiring Loom_ in: [Getting Started with Raspberry Pi Pico][18]
 
-#### Raspberry Pi Pico Dev Board
-Alternatively, a custom printed Raspberry Pi Pico Dev Board can be used to enhance development, which includes:
-
-* Debug Probe Host (Raspberry Pi Pico)
-* Detachable Target (Raspberry Pi Pico)
-* Serial Interface
-* Reset Button
-* Breakout Pins
-* Selection of _VSys_ or _VBus_ Power Sources
-
-The custom printed Raspberry Pi Pico Dev board is shown below:
-
-<!-- Embed Image -->
-<p align="center">
-  <img width=50% src="https://user-images.githubusercontent.com/62866982/191941119-a21dd273-d29b-49a5-8daf-5e4429268965.png">
-</p>
-
-For more information on printing your own custom Raspberry Pi Pico Dev Board, see:
-[Raspberry Pi Pico Dev Board][19]
-
 ## Usage
 #### Running
 To run the firmware in debug mode:
@@ -181,7 +162,7 @@ $ DEFMT_LOG=error cargo run --release
 * [RP-RS Alternative Runners][14]
 * [Knurling-RS App Template][4]
 * [Probe-RS Probe Setup][9]
-* [Raspberry Pi Pico Dev Board][19]
+
 
 
 <!-- Reference -->
